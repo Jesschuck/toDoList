@@ -21,8 +21,8 @@ function addTaskToDOM(text, completed = false, id = Date.now()) {
   taskItem.innerHTML = `
     <span contenteditable="true">${text}</span>
     <div>
-        <button style="background-color: rgb(227, 142, 189); color: white; border: none; border-radius: 3px" onclick="toggleComplete(${id})">Concluir</button>
-        <button style="background-color: #dc3545; color: white; border: none; border-radius: 3px" onclick="deleteTask(${id})">Excluir</button>
+        <button style="background-color: rgb(227, 142, 189); color: white; border: none; border-radius: 3px" onclick="toggleComplete(${id})">Finished</button>
+        <button style="background-color: #dc3545; color: white; border: none; border-radius: 3px" onclick="deleteTask(${id})">Delete</button>
     </div>
 `
 
